@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.book_it.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 606.471 s <<< FAILURE! - in com.book_it.runners.CukesRunner
+User logs in with invalid password(User is NOT able to login)  Time elapsed: 18.801 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[[object ProgressEvent]]> but was:<[sign in]>
+
