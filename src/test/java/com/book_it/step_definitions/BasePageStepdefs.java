@@ -50,4 +50,14 @@ public class BasePageStepdefs {
         Assert.assertTrue(mapPage.isMyModulePresent());
 
     }
+
+    @Then("BasePage elements are present and clickable")
+    public void basepageElementsArePresentAndClickable() {
+        Assert.assertTrue(mapPage.isMapModulePresent());
+        Assert.assertTrue(mapPage.isScheduleModulePresent());
+        Assert.assertTrue(mapPage.isHuntModulePresent());
+        Assert.assertTrue(mapPage.isMyModulePresent());
+        Assert.assertTrue(mapPage.introBookITLink.isDisplayed());
+        Assert.assertTrue(mapPage.questionCircle.isDisplayed());
+    }
 }

@@ -7,9 +7,7 @@ import com.book_it.utilities.ConfigurationReader;
 import com.book_it.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class LoginStepDefs {
 
@@ -30,6 +28,7 @@ public class LoginStepDefs {
 
     @Then("user should see homepage")
     public void user_should_see_homepage() {
+  //      Assert.assertTrue(mapPage.isLoadingCirclePresent());
         BrowserUtils.waitForVisibility(mapPage.subtitle_dark_side,10);
         Assert.assertEquals("dark-side",mapPage.subtitle_dark_side.getText());
     }

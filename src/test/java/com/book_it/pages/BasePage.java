@@ -27,9 +27,16 @@ public class BasePage {
     @FindBy(xpath = "//body/app-root[1]/div[1]/app-map-page[1]/app-hero[1]/section[1]/div[1]/nav[1]/div[1]/a[1]")
     public WebElement introBookIT_image;
 
+    @FindBy(xpath = "//body/app-root[1]/div[1]/app-map-page[1]/app-hero[1]/section[1]/div[1]/nav[1]/div[1]/a[1]")
+    public WebElement introBookITLink;
+
+
     @FindBy(xpath = "//body/app-root[1]/div[1]/app-map-page[1]/app-footer[1]/footer[1]/div[1]/div[1]/" +
             "a[1]/span[1]/fa[1]/i[1]")
     public WebElement questionCircle;
+
+    @FindBy(tagName = "//circle")
+    public WebElement loadingCircle;
 
     public boolean isMapModulePresent(){
         return Driver.get().findElements(By.xpath("//a[contains(text(),'map')]")).size() > 0;
@@ -47,6 +54,9 @@ public class BasePage {
         return Driver.get().findElements(By.xpath("//body/app-root[1]/div[1]/app-map-page[1]/app-hero[1]/section[1]/div[1]/nav[1]/div[2]/div[1]/div[2]")).size() > 0;
     }
 
+    public boolean isLoadingCirclePresent(){
+        return Driver.get().findElements(By.tagName("//circle")).size() > 0;
+    }
 
 
 }

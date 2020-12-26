@@ -5,7 +5,7 @@ Feature: User is able to login
     When user enters username  and password
     Then user should see homepage
 
-
+  @wip
   Scenario Outline: User logs in with valid credentials
     Given user is on the login page
     When user enters "<username>" and "<password>"
@@ -14,7 +14,7 @@ Feature: User is able to login
     Examples:
       | username                      | password        |
       | elaye8m@wikipedia.org         | tabordullingham |
-      | wfarrell8n@usnews.com         | doniafisby      |
+      | wfarrell8n@usnews.com         | doniafisbyY      |
       | teachervamikemarcus@gmail.com | mikemarcus      |
 
 
